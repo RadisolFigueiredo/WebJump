@@ -11,6 +11,7 @@
     a {
       cursor: pointer;
       text-decoration-line: underline;
+      color: white;
     }
   }
 }
@@ -26,10 +27,6 @@
 }
 
 .div-buscar {
-
-  // width: 40%;
-  // border: 1px solid #CC0D1F;
-  // background-color: #CC0D1F;
   input {
     width: 50%;
   }
@@ -42,5 +39,27 @@
     background-color: #CC0D1F;
     color: white;
 
+  }
+}
+
+nav {
+  border: 1px solid #CC0D1F;
+  background-color: #CC0D1F;
+  height: 5vh;
+
+  .align-center {
+    display: flex;
+    align-items: center;
+
+    .ul-nav {
+      text-decoration: none;
+      list-style: none;
+
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
   }
 }

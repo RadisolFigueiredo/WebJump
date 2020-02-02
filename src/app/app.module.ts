@@ -8,6 +8,11 @@ import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { CamisetasComponent } from './camisetas/camisetas.component';
+import { SapatosComponent } from './sapatos/sapatos.component';
+import { CalcasComponent } from './calcas/calcas.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     ProductsComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductDetailsComponent,
+    CamisetasComponent,
+    SapatosComponent,
+    CalcasComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
