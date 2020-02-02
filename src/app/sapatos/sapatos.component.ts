@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../products/product';
+import { ProductsService } from '../products/products.service';
 
 @Component({
   selector: 'app-sapatos',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SapatosComponent implements OnInit {
 
-  constructor() { }
+  product: Product[];
+
+  constructor(private service: ProductsService) { }
 
   ngOnInit() {
+    this.service.list().subscribe(items => (
+      (this.product = (items.shoes.map(sapatos => sapatos)))
+    ));
+    console.log(this.product);
   }
 
 }

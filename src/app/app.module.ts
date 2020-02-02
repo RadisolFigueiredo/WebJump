@@ -13,6 +13,7 @@ import { CamisetasComponent } from './camisetas/camisetas.component';
 import { SapatosComponent } from './sapatos/sapatos.component';
 import { CalcasComponent } from './calcas/calcas.component';
 import { ContatoComponent } from './contato/contato.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContatoComponent } from './contato/contato.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routing
+    routing,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

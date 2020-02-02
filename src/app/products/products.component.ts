@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from './products.service';
+import { Product } from './product';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  product: Product[];
+
+  constructor(private service: ProductsService) { }
 
   ngOnInit() {
+    this.service.list().subscribe(items => (this.product = (items.tshirts.map(camisetas => camisetas).concat(items.shoes, items.pants)))
+    );
+    console.log(this.product);
   }
 
 }
