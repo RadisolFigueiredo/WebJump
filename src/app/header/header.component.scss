@@ -1,0 +1,46 @@
+.background {
+  height: 20px;
+  background-color: black;
+  top: 0;
+
+  p {
+    color: white;
+    font-size: 10px;
+    text-align: end;
+
+    a {
+      cursor: pointer;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.logo {
+  height: 50px;
+}
+
+.altura-buscar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.div-buscar {
+
+  // width: 40%;
+  // border: 1px solid #CC0D1F;
+  // background-color: #CC0D1F;
+  input {
+    width: 50%;
+  }
+
+  button {
+    height: 100%;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 0;
+    background-color: #CC0D1F;
+    color: white;
+
+  }
+}
