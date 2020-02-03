@@ -1,3 +1,16 @@
-<div *ngFor="let item of product">
-  <img src="{{ item.image }}" />
+<div class="row">
+  <div class="test col-3" *ngFor="let item of product">
+    <div class="justify-content-center border-img">
+      <img src="{{ item.image }}" class="container flex-wrap d-flex" />
+      <div class="name-price">
+        <div class="space-name">
+          <p class="name mt-2">{{ item.name }}</p>
+        </div>
+        <p class="price mb-1 mt-3">R{{ item.price | currency }}</p>
+        <div class="btn p-0 mb-4">
+          <button>Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
