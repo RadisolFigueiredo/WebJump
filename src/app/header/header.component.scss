@@ -63,3 +63,17 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 380px) {
+  .background{
+    width: 100%;
+    .responsive {
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+    }
+  }
+  nav {
+    display: none !important;
+  }
+}

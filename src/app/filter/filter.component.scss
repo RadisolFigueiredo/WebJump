@@ -48,3 +48,22 @@
 
   }
 }
+
+@media screen and (max-width: 380px) {
+  .filtro-listagem {
+    margin: 0 10px;
+    display: flex;
+    .m-display-320 {
+      display: contents;
+      margin: 0;
+    }
+  }
+  .filtro {
+
+
+    h5 {
+      display: flex;
+    }
+  }
+}
+
