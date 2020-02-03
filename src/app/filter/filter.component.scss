@@ -1,0 +1,50 @@
+.filtro-listagem {
+  margin-top: 5%;
+
+  .filtro {
+    border: 2px solid rgba(128, 128, 128, 0.253);
+
+    h5,
+    h6 {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    h5 {
+      color: #CC0D1F;
+    }
+
+    h6 {
+      color: #28A3AA;
+    }
+
+    .cores {
+      height: 3vh;
+
+      .cor-1 {
+        border: 1px solid #CC0D1F;
+        background-color: #CC0D1F;
+      }
+
+      .cor-2 {
+        border: 1px solid #F36324;
+        background-color: #F36324;
+      }
+
+      .cor-3 {
+        border: 1px solid #28A3AA;
+        background-color: #28A3AA;
+      }
+    }
+
+    a {
+      color: rgb(128, 128, 128);
+    }
+
+    ul {
+      list-style: circle background-color(rgb(128, 128, 128)
+      );
+    }
+
+  }
+}

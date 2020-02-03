@@ -14,6 +14,7 @@ import { SapatosComponent } from './sapatos/sapatos.component';
 import { CalcasComponent } from './calcas/calcas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     CamisetasComponent,
     SapatosComponent,
     CalcasComponent,
-    ContatoComponent
+    ContatoComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

@@ -10,14 +10,14 @@ import { SapatosComponent } from './sapatos/sapatos.component';
 import { ContatoComponent } from './contato/contato.component';
 
 const APP_ROUTES: Routes = [
-  { path: 'products', component: ProductsComponent },
+  { path: '', component: ProductsComponent },
   { path: 'products/:id', component: ProductDetailsComponent },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'calcas', component: CalcasComponent },
   { path: 'sapatos', component: SapatosComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'login', component: LoginComponent },
-  { path: '', component: HomeComponent }
+  // { path: '', component: HomeComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
