@@ -17,7 +17,5 @@ export class SapatosComponent implements OnInit {
     this.service.list().subscribe(items => (
       (this.product = (items.shoes.map(sapatos => sapatos)))
     ));
-    console.log(this.product);
   }
-
 }

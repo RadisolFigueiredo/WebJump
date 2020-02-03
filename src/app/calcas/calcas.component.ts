@@ -16,8 +16,6 @@ export class CalcasComponent implements OnInit {
   ngOnInit() {
     this.service.list().subscribe(items => (
       (this.product = (items.pants.map(calcas => calcas))
-    )));
-    console.log(this.product);
+      )));
   }
-
 }

@@ -16,7 +16,5 @@ export class CamisetasComponent implements OnInit {
   ngOnInit() {
     this.service.list().subscribe(items => (this.product = (items.tshirts.map(camisetas => camisetas)))
     );
-    console.log(this.product);
   }
-
 }
