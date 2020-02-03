@@ -15,6 +15,7 @@ import { CalcasComponent } from './calcas/calcas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './filter/filter.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FilterComponent } from './filter/filter.component';
     SapatosComponent,
     CalcasComponent,
     ContatoComponent,
-    FilterComponent
+    FilterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
