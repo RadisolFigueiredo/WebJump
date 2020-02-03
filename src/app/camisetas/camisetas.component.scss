@@ -10,26 +10,32 @@
     p {
       text-align: center;
     }
-
     .space-name {
       display: block;
       min-height: 30px;
       max-height: 33px;
-
       .name {
         color: rgb(128, 128, 128);
         text-transform: uppercase;
       }
     }
-
     .price {
       color: #CC0D1F;
       font-weight: 800;
-    }
+      font-size: 18px;
+      margin: auto 0;
 
+    }
+    .special-price {
+      font-size: 14px;
+      color: rgba(128, 128, 128, 0.452);
+      text-decoration: line-through;
+      font-weight: bold;
+      margin: auto 0;
+      text-align: end;
+    }
     .btn {
       width: 100%;
-
       button {
         width: 100%;
         max-height: 6vh;
@@ -47,8 +53,20 @@
   .name {
     font-size: 14px;
   }
-
   .btn {
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .display-320 {
+    display: flex;
+    border-img {
+      display: contents;
+    }
+    .price {
+      margin-top: 1.5rem !important;
+    }
+  }
+}
+

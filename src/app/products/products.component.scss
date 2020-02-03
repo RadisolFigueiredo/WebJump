@@ -22,6 +22,17 @@
     .price {
       color: #CC0D1F;
       font-weight: 800;
+      font-size: 18px;
+      margin: auto 0;
+
+    }
+    .special-price {
+      font-size: 14px;
+      color: rgba(128, 128, 128, 0.452);
+      text-decoration: line-through;
+      font-weight: bold;
+      margin: auto 0;
+      text-align: end;
     }
     .btn {
       width: 100%;

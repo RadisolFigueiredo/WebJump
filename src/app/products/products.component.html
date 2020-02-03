@@ -1,12 +1,22 @@
 <div class="display-320 row">
-  <div class="col-6 col-lg-3 col-sm-4 col-xs-6 col-md-4" *ngFor="let item of product">
+  <div
+    class="col-xg-3 col-lg-3 col-sm-4 col-xs-6 col-md-4"
+    *ngFor="let item of product"
+  >
     <div class="justify-content-center border-img">
       <img src="{{ item.image }}" class="container flex-wrap d-flex" />
       <div class="name-price">
         <div class="space-name">
           <p class="name mt-2">{{ item.name }}</p>
         </div>
-        <p class="price mb-1 mt-3">R{{ item.price | currency }}</p>
+        <div class="row mb-1 mt-3 w-100">
+          <div class="d-flex justify-content-center w-100">
+            <p *ngIf="item.specialPrice" class="col special-price p-0">
+              R{{ item.specialPrice | currency }}
+            </p>
+            <p class="col price p-0">R{{ item.price | currency }}</p>
+          </div>
+        </div>
         <div class="btn p-0 mb-4">
           <button>Comprar</button>
         </div>
