@@ -22,4 +22,5 @@ export class ProductsService {
   listItems() {
     return this.http.get<Categoria[]>(this.apiUrlCateg);
   }
+
 }
