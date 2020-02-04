@@ -16,7 +16,6 @@ export class FilterComponent implements OnInit {
   ngOnInit() {
     this.service.listItems().subscribe(item => this.categoria = (item.map(categoria => categoria))
     );
-    console.log(this.categoria);
   }
 
 }

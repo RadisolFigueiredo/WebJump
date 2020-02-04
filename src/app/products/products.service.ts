@@ -17,15 +17,9 @@ export class ProductsService {
 
   listProducts() {
     return this.http.get<Product[]>(this.apiUrl)
-    .pipe(
-      tap(console.log)
-    );
   }
 
   listItems() {
     return this.http.get<Categoria[]>(this.apiUrlCateg)
-    .pipe(
-      tap(console.log)
-    );
   }
 }

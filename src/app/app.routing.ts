@@ -8,7 +8,9 @@ import { SapatosComponent } from './sapatos/sapatos.component';
 import { ContatoComponent } from './contato/contato.component';
 
 const APP_ROUTES: Routes = [
-  { path: '', component: ProductsComponent },
+  { path: '', component: ProductsComponent,     data: {
+    breadcrumb: ''
+  }, },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'calcas', component: CalcasComponent },
   { path: 'calcados', component: SapatosComponent },
