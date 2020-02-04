@@ -16,10 +16,10 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
   listProducts() {
-    return this.http.get<Product[]>(this.apiUrl)
+    return this.http.get<Product[]>(this.apiUrl);
   }
 
   listItems() {
-    return this.http.get<Categoria[]>(this.apiUrlCateg)
+    return this.http.get<Categoria[]>(this.apiUrlCateg);
   }
 }
