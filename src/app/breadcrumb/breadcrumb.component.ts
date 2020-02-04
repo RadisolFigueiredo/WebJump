@@ -34,6 +34,7 @@ export class BreadcrumbComponent implements OnInit {
       label: label,
       url: nextUrl,
     };
+
     const newBreadcrumbs = [...breadcrumbs, breadcrumb];
     if (route.firstChild) {
       return this.buildBreadCrumb(route.firstChild, nextUrl, newBreadcrumbs);

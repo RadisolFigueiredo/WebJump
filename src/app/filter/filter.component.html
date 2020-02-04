@@ -21,7 +21,7 @@
       <div>
         <h6>Tipo</h6>
         <ul *ngFor="let item of categoria" class="container" >
-        <li><a>{{item.name}}</a></li>
+        <li><a routerLink="{{item.path}}">{{item.name}}</a></li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,31 @@
+.box-contato {
+  // width: 40%;
+  background-color: rgba(128, 128, 128, 0.089);
+  border-radius: 5px;
+  margin: 15px;
+
+  .box {
+    margin: 20px;
+
+    label {
+      color: #CC0D1F;
+      font-weight: bolder;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #CC0D1F;
+    color: white;
+    font-weight: 800;
+  }
+}
+
+h3 {
+  color: #CC0D1F;
+  font-weight: bolder;
+  text-align: center;
+}
+

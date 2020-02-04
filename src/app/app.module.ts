@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { LoginComponent } from './login/login.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { CamisetasComponent } from './camisetas/camisetas.component';
@@ -22,7 +21,6 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     AppComponent,
     HomeComponent,
     ProductsComponent,
-    LoginComponent,
     HeaderComponent,
     CamisetasComponent,
     SapatosComponent,
