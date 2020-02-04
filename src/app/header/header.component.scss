@@ -64,7 +64,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 320px) {
   .background{
     width: 100%;
     .responsive {
@@ -73,7 +73,7 @@ nav {
       font-size: 12px;
     }
   }
-  nav {
+  .respons-nav {
     display: none !important;
   }
 }

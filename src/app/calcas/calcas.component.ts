@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../products/product';
 import { ProductsService } from '../products/products.service';
+import { Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-calcas',
@@ -15,7 +16,7 @@ export class CalcasComponent implements OnInit {
 
   ngOnInit() {
     this.service.listProducts().subscribe(items => (
-      (this.product = (items.pants.map(calcas => calcas))
+      (this.product = ((items as any).pants.map(calcas => calcas))
       )));
   }
 }
