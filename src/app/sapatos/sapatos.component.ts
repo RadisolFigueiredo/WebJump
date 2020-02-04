@@ -14,7 +14,7 @@ export class SapatosComponent implements OnInit {
   constructor(private service: ProductsService) { }
 
   ngOnInit() {
-    this.service.list().subscribe(items => (
+    this.service.listProducts().subscribe(items => (
       (this.product = (items.shoes.map(sapatos => sapatos)))
     ));
   }

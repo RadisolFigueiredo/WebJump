@@ -1,32 +1,27 @@
 <div class="filtro-listagem">
   <div class="m-display-320 row">
-    <div class="filtro col col-lg col-sm col-md p-3 mr-2">
+    <div class="filtro col-xl col-lg col-sm col-md p-3 mr-2">
       <h5>
         Filtre por
       </h5>
       <div>
         <h6>Categorias</h6>
-        <ul class="container">
-          <li>Roupas</li>
-          <li>Sapatos</li>
-          <li>Acessórios</li>
+        <ul *ngFor="let item of categoria" class="container" >
+        <li><a routerLink="{{item.path}}">{{item.name}}</a></li>
         </ul>
       </div>
       <div class="mb-4">
         <h6>Cores</h6>
         <div class="cores container row m-0 p-0">
-          <div class="col-2 col-lg-2 col-sm-1 col-md-2 mr-1 cor-1"></div>
-          <div class="col-2 col-lg-2 col-sm-1 col-md-2 mr-1 cor-2"></div>
-          <div class="col-2 col-lg-2 col-sm-1 col-md-2 cor-3"></div>
+          <div class="col-xl-2 col-lg-2 col-sm-1 col-md-2 mr-1 cor-1"></div>
+          <div class="col-xl-2 col-lg-2 col-sm-1 col-md-2 mr-1 cor-2"></div>
+          <div class="col-xl-2 col-lg-2 col-sm-1 col-md-2 cor-3"></div>
         </div>
       </div>
       <div>
         <h6>Tipo</h6>
-        <ul class="container">
-          <li><a>Corrida</a></li>
-          <li><a>Caminhada</a></li>
-          <li><a>Casual</a></li>
-          <li><a>Social</a></li>
+        <ul *ngFor="let item of categoria" class="container" >
+        <li><a>{{item.name}}</a></li>
         </ul>
       </div>
     </div>

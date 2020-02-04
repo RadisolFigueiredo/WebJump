@@ -3,18 +3,27 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from './product';
 import { environment } from '../../environments/environment';
 import { tap } from 'rxjs/operators';
+import { Categoria } from '../filter/categoria';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  private readonly apiUrl = `${environment.apiUrl}products`;
+  private readonly apiUrl = 'http://localhost:3000/products';
+  private readonly apiUrlCateg = 'http://localhost:3000/items';
 
   constructor(private http: HttpClient) { }
 
-  list() {
+  listProducts() {
     return this.http.get<Product[]>(this.apiUrl)
+    .pipe(
+      tap(console.log)
+    );
+  }
+
+  listItems() {
+    return this.http.get<Categoria[]>(this.apiUrlCateg)
     .pipe(
       tap(console.log)
     );

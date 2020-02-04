@@ -1,0 +1,21 @@
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li+li:before {
+  content: " > ";
+  color: gray;
+}
+.breadcrumb-item {
+  color: #CC0D1F !important;
+  font-size: 12px;
+}
+
+.breadcrumb {
+  padding: 20px;
+  background-color: transparent;
+  a {
+    color: #28A3AA;
+    font-size: 12px;
+  }
+}

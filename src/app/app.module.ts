@@ -8,7 +8,6 @@ import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { CamisetasComponent } from './camisetas/camisetas.component';
 import { SapatosComponent } from './sapatos/sapatos.component';
 import { CalcasComponent } from './calcas/calcas.component';
@@ -16,6 +15,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './filter/filter.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { FooterComponent } from './footer/footer.component';
     ProductsComponent,
     LoginComponent,
     HeaderComponent,
-    ProductDetailsComponent,
     CamisetasComponent,
     SapatosComponent,
     CalcasComponent,
     ContatoComponent,
     FilterComponent,
-    FooterComponent
+    FooterComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
