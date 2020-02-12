@@ -7,14 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
-import { CamisetasComponent } from './camisetas/camisetas.component';
-import { SapatosComponent } from './sapatos/sapatos.component';
-import { CalcasComponent } from './calcas/calcas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './filter/filter.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { CamisetasComponent } from './products/camisetas/camisetas.component';
+import { SapatosComponent } from './products/sapatos/sapatos.component';
+import { CalcasComponent } from './products/calcas/calcas.component';
 
 @NgModule({
   declarations: [

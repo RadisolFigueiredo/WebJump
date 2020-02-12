@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from './product';
-import { environment } from '../../environments/environment';
-import { tap } from 'rxjs/operators';
 import { Categoria } from '../filter/categoria';
 
 @Injectable({

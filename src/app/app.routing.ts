@@ -2,10 +2,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ModuleWithProviders } from '@angular/core';
-import { CamisetasComponent } from './camisetas/camisetas.component';
-import { CalcasComponent } from './calcas/calcas.component';
-import { SapatosComponent } from './sapatos/sapatos.component';
+
 import { ContatoComponent } from './contato/contato.component';
+import { CamisetasComponent } from './products/camisetas/camisetas.component';
+import { CalcasComponent } from './products/calcas/calcas.component';
+import { SapatosComponent } from './products/sapatos/sapatos.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: ProductsComponent,     data: {

@@ -1,0 +1,36 @@
+.title-products {
+  color: #CC0D1F;
+  margin: 20px auto;
+}
+
+.size-name {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+}
+
+fieldset {
+  border-top: 2px solid rgba(40, 164, 170, 0.432);
+  width: 96%;
+  margin: 0 auto;
+
+  legend {
+    width: auto;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+}
+
+div {
+  a {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  fieldset {
+    legend {
+      padding: 0 35px;
+    }
+  }
+}

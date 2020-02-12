@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from './products.service';
 import { Product } from './product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -9,13 +10,27 @@ import { Product } from './product';
 })
 export class ProductsComponent implements OnInit {
 
-  product: Product[];
+  productTshirt: Product[];
+  productPants: Product[];
+  productShoes: Product[];
 
-  constructor(private service: ProductsService) { }
+
+  constructor(private service: ProductsService, private router: Router,
+  ) { }
 
   ngOnInit() {
-    this.service.listProducts().subscribe(items => (this.product = ((items as any).tshirts.map(camisetas => camisetas).concat((items as any).shoes, (items as any).pants)))
-    );
+    this.service.listProducts().subscribe(items => {
+
+      (this.productTshirt = ((items as any).tshirts.map(camisetas => camisetas).slice(0, 3))
+      );
+
+      (this.productPants = ((items as any).pants.map(calcas => calcas).slice(0, 3))
+      );
+
+      (this.productShoes = ((items as any).shoes.map(sapatos => sapatos).slice(0, 3))
+      );
+    });
+
   }
 
 }

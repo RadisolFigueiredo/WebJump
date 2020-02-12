@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../products/product';
-import { ProductsService } from '../products/products.service';
-import { Title } from '@angular/platform-browser'
+import { Title } from '@angular/platform-browser';
+import { Product } from '../product';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-calcas',

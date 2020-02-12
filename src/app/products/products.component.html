@@ -1,26 +1,73 @@
-<div class="display-320 row">
-  <div
-    class="col-xg-3 col-lg-3 col-sm-4 col-xs-6 col-md-4"
-    *ngFor="let item of product"
-  >
-    <div class="justify-content-center border-img">
-      <img src="{{ item.image }}" class="container flex-wrap d-flex" />
-      <div class="name-price">
-        <div class="space-name">
-          <p class="name mt-2">{{ item.name }}</p>
-        </div>
-        <div class="row mb-1 mt-3 w-100">
-          <div class="d-flex justify-content-center w-100">
-            <p *ngIf="item.specialPrice" class="col special-price p-0">
-              R{{ item.specialPrice | currency }}
-            </p>
-            <p class="col price p-0">R{{ item.price | currency }}</p>
+<div class="container">
+  <div class="display-320 row">
+    <fieldset>
+      <legend class="title-products col-xg-4 col-lg-4 col-sm-8 col-xs-8 col-md-4 d-flex justify-content-center ">
+        Camisetas
+      </legend>
+    </fieldset>
+    <div
+      class="col-xg-4 col-lg-4 col-sm-4 col-xs-6 col-md-4"
+      *ngFor="let tshirts of productTshirt"
+    >
+      <div class="justify-content-center border-img">
+        <img src="{{ tshirts.image }}" class="container d-flex" />
+        <div class="name-price">
+          <div class="space-name">
+            <p class="size-name mt-2">{{ tshirts.name }}</p>
           </div>
         </div>
-        <div class="btn p-0 mb-4">
-          <button>Comprar</button>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-3 mb-5">
+      <a role="button" class="btn btn-outline-danger col-xg-4 col-lg-4 col-sm-5 col-xs-5 col-md-4" [routerLink]="['/camisetas']">Ver Mais</a>
+    </div>
+  </div>
+
+  <div class="display-320 row">
+    <fieldset>
+      <legend class="title-products col-xg-4 col-lg-4 col-sm-8 col-xs-8 col-md-4 d-flex justify-content-center">
+        Calças
+      </legend>
+    </fieldset>
+    <div
+      class="col-xg-4 col-lg-4 col-sm-4 col-xs-6 col-md-4"
+      *ngFor="let pants of productPants"
+    >
+      <div class="justify-content-center border-img">
+        <img src="{{ pants.image }}" class="container d-flex" />
+        <div class="name-price">
+          <div class="space-name">
+            <p class="size-name mt-2">{{ pants.name }}</p>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-3 mb-5">
+      <a role="button" class="btn btn-outline-danger col-xg-4 col-lg-4 col-sm-5 col-xs-5 col-md-4" [routerLink]="['/calcas']">Ver Mais</a>
+    </div>
+  </div>
+
+  <div class="display-320 row">
+    <fieldset>
+      <legend class="title-products col-xg-4 col-lg-4 col-sm-8 col-xs-8 col-md-4 d-flex justify-content-center ">
+        Calçados
+      </legend>
+    </fieldset>
+    <div
+      class="col-xg-4 col-lg-4 col-sm-4 col-xs-6 col-md-4"
+      *ngFor="let shoes of productShoes"
+    >
+      <div class="justify-content-center border-img">
+        <img src="{{ shoes.image }}" class="container d-flex" />
+        <div class="name-price">
+          <div class="space-name">
+            <p class="size-name mt-2">{{ shoes.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-3 mb-5">
+      <a role="button" class="btn btn-outline-danger col-xg-4 col-lg-4 col-sm-5 col-xs-5 col-md-4" [routerLink]="['/calcados']">Ver Mais</a>
     </div>
   </div>
 </div>

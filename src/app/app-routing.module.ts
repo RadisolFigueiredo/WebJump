@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CamisetasComponent } from './camisetas/camisetas.component';
-import { HomeComponent } from './home/home.component';
-import { CalcasComponent } from './calcas/calcas.component';
-import { SapatosComponent } from './sapatos/sapatos.component';
-import { ProductsComponent } from './products/products.component';
 import { ContatoComponent } from './contato/contato.component';
+import { ProductsComponent } from './products/products.component';
+import { CamisetasComponent } from './products/camisetas/camisetas.component';
+import { CalcasComponent } from './products/calcas/calcas.component';
+import { SapatosComponent } from './products/sapatos/sapatos.component';
+
 
 
 const routes: Routes = [
